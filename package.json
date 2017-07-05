@@ -2,6 +2,7 @@
   "name": "not-so-human-typist",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://un0rsk.github.io/not-so-human-typist",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
