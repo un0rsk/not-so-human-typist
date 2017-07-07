@@ -1,11 +1,8 @@
-.App {
-  text-align: center;
-}
-
-.Typist input {
+.Typist {
+  margin-top: 5%;
   font-size: 35pt;
   border-style: none;
-  /*border-bottom-style: solid;*/
+  border-bottom-style: solid;
   -webkit-box-shadow:0;
   -moz-box-shadow:0;
   box-shadow:0;

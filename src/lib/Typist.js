@@ -35,7 +35,7 @@ class Typist extends Component {
     } else if (this.state.typoAt > 0) {
       this.rollbackToTypo()
     } else {
-      this.setState({disabled: true})
+      // the end
     }
   }
 
@@ -53,14 +53,29 @@ class Typist extends Component {
   }
 
   componentDidMount() {
-    this.typist.focus();
+    this.fade()
     this.printPart()
+  }
+
+  fade() {
+    setTimeout(() => {
+      this.setState({showCursor: true})
+      this.unfade()
+    }, 500)
+  }
+
+  unfade() {
+    setTimeout(() => {
+      this.setState({showCursor: false})
+      this.fade()
+    }, 300)
   }
 
   render() {
     return (
       <div className='Typist'>
-        <input ref={(i) => this.typist = i} type='text' value={this.state.typed} disabled={this.disabled}/>
+        {this.state.typed}
+        <span style={this.state.showCursor ? {} : { display: 'none' }}>_</span>
       </div>
     );
   }

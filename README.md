@@ -16,7 +16,7 @@
     render() {
         return (
         <div className="App">
-                <Typist name='Hi there, I am Donna'/>
+                <Typist text='Hi there, I am Donna' delay='200'/>
         </div>
         );
     }
@@ -24,6 +24,22 @@
 
     export default App;
 
+
+## Styling
+
+Simply define .Typist style
+
+    .Typist {
+    margin-top: 5%;
+    font-size: 35pt;
+    border-style: none;
+    border-bottom-style: solid;
+    -webkit-box-shadow:0;
+    -moz-box-shadow:0;
+    box-shadow:0;
+    outline: none;
+    font-family: 'Special Elite', cursive;
+    }
 
 ## Background
 
