@@ -27,8 +27,9 @@
   },
   "devDependencies": {
     "react-scripts": "0.9.5",
+    "react-component-gulp-tasks": "^0.7.6",
     "gulp": "^3.9.0",
-    "react-component-gulp-tasks": "^0.7.6"
+    "babel-core": "^6.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
