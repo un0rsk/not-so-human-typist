@@ -5,8 +5,9 @@ class Typist extends Component {
   
   constructor(props) {
     super(props)
-    this.state = {typed: '', iterations: 0, typoAt: this.getTypoPosition(this.props.name)}
-    this.delay =  150
+    this.delay =  this.props.delay ? this.props.delay : 150
+    this.textToType = this.props.text
+    this.state = {typed: '', iterations: 0, typoAt: this.getTypoPosition(this.textToType)}
   }
 
   getTypoPosition(toType) {
@@ -16,16 +17,16 @@ class Typist extends Component {
 
   charToTypeo(index) {
     if (index === this.state.typoAt) {
-      return this.props.name.substr(index + 1, 1)
+      return this.textToType.substr(index + 1, 1)
     } else if (index === this.state.typoAt + 1) {
-      return this.props.name.substr(index - 1, 1)
+      return this.textToType.substr(index - 1, 1)
     } else {
-      return this.props.name.substr(index, 1)
+      return this.textToType.substr(index, 1)
     }
   }
 
   printPart() {
-    if (this.state.iterations <= this.props.name.length) {
+    if (this.state.iterations <= this.textToType.length) {
       this.setState({
         typed: this.state.typed + this.charToTypeo(this.state.iterations),
         iterations: this.state.iterations + 1

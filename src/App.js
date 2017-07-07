@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-			  <Typist name='Hi there, I am Donna'/>
+			  <Typist text='Hi there, I am Donna' delay='200'/>
       </div>
     );
   }
