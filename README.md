@@ -4,13 +4,13 @@
 
 ### Installation
 
-    npm install @un0rsk/not-so-human-typist
+    npm install not-so-human-typist --save
 
 ### Usage
 
     import React, { Component } from 'react';
     import './App.css';
-    import Typist from './Typist';
+    import Typist from 'not-so-human-typist';
 
     class App extends Component {
     render() {
