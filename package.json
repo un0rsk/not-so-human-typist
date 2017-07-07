@@ -1,8 +1,8 @@
 {
   "name": "not-so-human-typist",
   "description": "emulate human typing",
-  "version": "0.1.1",
-  "main": "src/lib/Typist.js",
+  "version": "0.1.2",
+  "main": "lib/Typist.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/un0rsk/not-so-human-typist.git"
