@@ -15,6 +15,7 @@ var taskConfig = {
 		src: 'src/lib',
 		file: 'Typist.js',
 		name: 'Typist',
+		dist: 'dist',
 		dependencies: [
 			'react',
 			'react-dom'
