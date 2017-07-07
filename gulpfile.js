@@ -15,12 +15,10 @@ var taskConfig = {
 		src: 'src/lib',
 		file: 'Typist.js',
 		name: 'Typist',
-		dist: 'lib',
 		dependencies: [
 			'react',
 			'react-dom'
-		],
-		lib: 'lib'
+		]
 	}
 };
 
