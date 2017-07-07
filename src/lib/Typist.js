@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 
 class Typist extends Component {
-  delay =  150
-
+  
   constructor(props) {
     super(props)
     this.state = {typed: '', iterations: 0, typoAt: this.getTypoPosition(this.props.name)}
+    this.delay =  150
   }
 
   getTypoPosition(toType) {

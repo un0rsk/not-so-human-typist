@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Typist from './Typist';
+import Typist from './lib/Typist';
 
 class App extends Component {
   render() {

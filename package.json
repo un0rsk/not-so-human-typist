@@ -1,19 +1,42 @@
 {
   "name": "not-so-human-typist",
+  "description": "emulate human typing",
   "version": "0.1.0",
-  "private": true,
+  "main": "lib/Typist.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/un0rsk/not-so-human-typist.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "render",
+    "component",
+    "javascript",
+    "react-component"
+  ],
+  "author": "un0rsk https://github.com/un0rsk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/un0rsk/not-so-human-typist/issues"
+  },
   "homepage": "http://un0rsk.github.io/not-so-human-typist",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+    "gulp": "^3.9.0",
+    "react-component-gulp-tasks": "^0.7.6"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && gulp clean && NODE_ENV=production gulp build",
+    "build-app": "react-scripts build",
+    "build-npm": "gulp clean && NODE_ENV=production gulp build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "release": "NODE_ENV=production gulp release"
   }
 }
