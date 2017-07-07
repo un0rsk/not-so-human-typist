@@ -1,7 +1,7 @@
 {
   "name": "not-so-human-typist",
   "description": "emulate human typing",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/Typist.js",
   "repository": {
     "type": "git",
@@ -32,8 +32,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && gulp clean && NODE_ENV=production gulp build",
-    "build-app": "react-scripts build",
+    "build-all": "react-scripts build && gulp clean && NODE_ENV=production gulp build",
+    "build": "react-scripts build",
     "build-npm": "gulp clean && NODE_ENV=production gulp build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
