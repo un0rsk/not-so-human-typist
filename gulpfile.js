@@ -13,7 +13,6 @@ var initGulpTasks = require('react-component-gulp-tasks');
 var taskConfig = {
 	component: {
 		src: 'src/lib',
-		file: 'Typist.js',
 		name: 'Typist',
 		dist: 'dist',
 		dependencies: [
