@@ -16,6 +16,7 @@ var taskConfig = {
 		name: 'Typist',
 		dist: 'dist',
 		dependencies: [
+			'classnames',
 			'react',
 			'react-dom'
 		]

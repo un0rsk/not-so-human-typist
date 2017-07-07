@@ -1,7 +1,7 @@
 {
   "name": "not-so-human-typist",
   "description": "emulate human typing",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/not-so-human-typist.min.js",
   "repository": {
     "type": "git",
@@ -22,14 +22,14 @@
   },
   "homepage": "http://un0rsk.github.io/not-so-human-typist",
   "dependencies": {
+    "babel-core": "^6.25.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
     "react-scripts": "0.9.5",
     "react-component-gulp-tasks": "^0.7.6",
-    "gulp": "^3.9.0",
-    "babel-core": "^6.0.0"
+    "gulp": "^3.9.0"
   },
   "browserify-shim": {
     "react": "global:React"
