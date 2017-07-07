@@ -6,7 +6,7 @@ class Typist extends Component {
   constructor(props) {
     super(props)
     this.delay =  this.props.delay ? this.props.delay : 150
-    this.textToType = this.props.text
+    this.textToType = this.props.text ? this.props.text : 'undefined'
     this.state = {typed: '', iterations: 0, typoAt: this.getTypoPosition(this.textToType)}
   }
 
