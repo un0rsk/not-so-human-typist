@@ -41,7 +41,6 @@
     "build": "react-scripts build",
     "build-npm": "node_modules/.bin/babel src/lib -d dist",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "release": "NODE_ENV=production gulp release"
+    "eject": "react-scripts eject"
   }
 }
